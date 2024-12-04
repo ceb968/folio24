@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" content="Ralph Acebron | folio24" />
+    <meta property="og:description" content="Archive of illustration & design by Ralph Acebron." />
+    <meta property="og:image" content="https://ralphacebron.github.io/folio24/assets/images/social-preview.png" />
+    <meta property="og:url" content="https://ralphacebron.github.io/folio24/" />
+    <meta name="twitter:title" content="Ralph Acebron | folio24" />
+    <meta name="twitter:description" content="Archive of illustration & design by Ralph Acebron." />
+    <meta name="twitter:image" content="https://ralphacebron.github.io/folio24/assets/images/social-preview.png" />
     <title>Ralph Acebron | folio24</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -192,8 +199,6 @@ header h1 {
       flex-direction: row; /* Side by side layout */
       align-items: left; /* Vertically center the items */
       justify-content: left; /* Horizontally center the items */
-      top: 10px; /* Distance from the top */
-    left: 10px; /* Distance from the right */
     }
 
     header h5 {
@@ -203,8 +208,6 @@ header h1 {
       flex-direction: row; /* Side by side layout */
       align-items: left; /* Vertically center the items */
       justify-content: left; /* Horizontally center the items */
-      top: 10px; /* Distance from the top */
-    right: 10px; /* Distance from the right */
     }
 
 header nav {
@@ -281,21 +284,19 @@ h5:hover {
 }
 
 /* Position the hamburger icon on the right */
-/* Flat hamburger icon styles */
 .hamburger {
     display: block;
     font-size: 30px;
     cursor: pointer;
-    color: #f2f4f1; /* Icon color */
+    color: #f2f4f1; /* Icon color set to light gray to match the design */
     padding: 10px;
     background-color: transparent; /* Transparent background */
-    border: none; /* Remove default border */
-    border-radius: 0; /* Remove border-radius to eliminate 3D effect */
+    border: none; /* Remove default button border */
+    border-radius: 5px;
     position: absolute;
     top: 10px; /* Distance from the top */
     right: 10px; /* Distance from the right */
     z-index: 1000; /* Ensure the hamburger icon is above other elements */
-    box-shadow: none; /* Remove any box-shadow for a flat look */
 }
 
 /* Add hover effect */
