@@ -281,9 +281,10 @@ h5:hover {
     display: block;
     font-size: 30px;
     cursor: pointer;
-    color: #f2f4f1;
+    color: #f2f4f1; /* Icon color set to light gray to match the design */
     padding: 10px;
-    background-color: transparent;
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove default button border */
     border-radius: 5px;
     position: absolute;
     top: 10px; /* Distance from the top */
@@ -291,11 +292,16 @@ h5:hover {
     z-index: 1000; /* Ensure the hamburger icon is above other elements */
 }
 
-    .hamburger:hover {
-    background-color: #f2f4f1; /* White background on hover */
-    color: #899ea0; /* Change icon color to match background */
-    border: 2px solid #899ea0; /* Change the border color on hover */
+/* Add hover effect */
+.hamburger:hover {
+    color: #6d7d7f; /* Change icon color to a darker gray on hover */
 }
+
+/* Show the nav menu when toggled */
+#navbar.show {
+    display: block;
+}
+
 
 #navbar ul {
     list-style: none;
