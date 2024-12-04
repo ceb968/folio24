@@ -451,7 +451,12 @@ img {
 }
 
 /* Small mobile screens (portrait or very small devices) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px)
+     .hamburger:focus {
+        outline: none; /* Remove focus outline if visible */
+    }
+    
+    .hamburger {
     color: #f2f4f1 !important; /* Ensure the hamburger icon color is #f2f4f1 in mobile */
         background-color: transparent !important; /* Ensure no background is applied */
         border: none !important; /* Remove any border */
