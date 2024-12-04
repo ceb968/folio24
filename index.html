@@ -269,54 +269,61 @@ h5:hover {
 }
 
   /* Make the nav menu hidden by default */
-  #navbar {
-        display: none;
-        width: 100%;
-        text-align: center;
-    }
+#navbar {
+    display: none;
+    width: 100%;
+    text-align: center;
+    position: relative; /* Make the parent container position relative for absolute positioning of the hamburger */
+}
 
-    #navbar ul {
-        list-style: none;
-        padding: 0;
-        display: flex; /* Align items horizontally */
-        justify-content: center; /* Center the items horizontally */
-        gap: 15px; /* Space between the links */
-    }
+/* Position the hamburger icon on the right */
+.hamburger {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: #f2f4f1;
+    padding: 10px;
+    background-color: #899ea0;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    z-index: 1000; /* Ensure the hamburger icon is above other elements */
+}
 
-    #navbar ul li {
-        display: inline-block; /* Display the list items side by side */
-    }
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center the items horizontally */
+    gap: 15px; /* Space between the links */
+}
 
-    #navbar ul li a {
-        font-size: 18px;
-        color: #f2f4f1;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 10px 15px; /* Add padding to the links */
-        background-color: #899ea0;
-        border-radius: 5px;
-        text-align: center; /* Center the text inside the link */
-    }
+#navbar ul li {
+    display: inline-block; /* Display the list items side by side */
+}
 
-    #navbar ul li a:hover {
-        color: white;
-    }
+#navbar ul li a {
+    font-size: 18px;
+    color: #f2f4f1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Add padding to the links */
+    background-color: #899ea0;
+    border-radius: 5px;
+    text-align: center; /* Center the text inside the link */
+}
 
-    /* Hamburger menu styles */
-    .hamburger {
-        display: block;
-        font-size: 30px;
-        cursor: pointer;
-        color: #f2f4f1;
-        padding: 10px;
-        background-color: #899ea0;
-        border-radius: 5px;
-    }
+#navbar ul li a:hover {
+    color: white;
+}
 
-    /* Show the nav menu when toggled */
-    #navbar.show {
-        display: block;
-    }
+/* Show the nav menu when toggled */
+#navbar.show {
+    display: block;
+}
+
+
 
 /* Section Styles */
 .section {
