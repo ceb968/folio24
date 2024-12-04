@@ -199,6 +199,7 @@ header h1 {
       justify-content: left; /* Horizontally center the items */
     }
 
+/* Default header navigation (mobile-first approach) */
 header nav {
     float: right;
     margin-right: 20px;
@@ -206,22 +207,47 @@ header nav {
 
 header nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 header nav ul li {
-    display: inline-block;
-    margin-left: 20px;
+    display: block; /* Stack the items vertically on mobile */
+    margin-bottom: 10px; /* Space between items on mobile */
 }
 
 header nav ul li a {
     color: #f2f4f1;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px; /* Adjust font size for mobile */
+    padding: 10px 15px;
+    display: block; /* Block-level links to fill the entire space */
 }
 
 header nav ul li a:hover {
     color: white;
 }
+
+/* Tablet and Desktop Styles */
+@media (min-width: 600px) {
+    header nav ul {
+        display: flex; /* Display items in a row on larger screens */
+        justify-content: flex-end; /* Align the menu items to the right */
+        margin: 0;
+    }
+
+    header nav ul li {
+        display: inline-block; /* Items will be in a horizontal row */
+        margin-left: 20px; /* Add space between items */
+    }
+
+    header nav ul li a {
+        font-size: 20px; /* Larger font size for larger screens */
+        padding: 15px 20px; /* More padding for larger screens */
+    }
+}
+
 
 h1 {
     color:#f2f4f1;
