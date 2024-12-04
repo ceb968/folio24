@@ -426,11 +426,21 @@ img {
 }
 
 /* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) 
+    .hamburger {
     color: #f2f4f1 !important; /* Ensure the hamburger icon color is #f2f4f1 in mobile */
         background-color: transparent !important; /* Ensure no background is applied */
         border: none !important; /* Remove any border */
 }
+    .hamburger:focus {
+        outline: none; /* Remove focus outline if visible */
+    }
+
+    .hamburger:hover {
+    color: #6d7d7f; /* Change icon color to a darker gray on hover */
+}
+
+    
   /* Adjust slideshow container size on mobile */
   .slideshow-container {
     max-width: 100%;
