@@ -426,25 +426,20 @@ img {
 }
 
 /* Mobile Responsiveness */
-@media screen and (max-width: 768px) 
-    .hamburger {
-    color: #f2f4f1 !important; /* Ensure the hamburger icon color is #f2f4f1 in mobile */
+@media screen and (max-width: 768px) {
+   .hamburger {
+        color: #f2f4f1 !important; /* Ensure the hamburger icon color is #f2f4f1 on mobile */
         background-color: transparent !important; /* Ensure no background is applied */
         border: none !important; /* Remove any border */
-}
-    .hamburger:focus {
-        outline: none; /* Remove focus outline if visible */
     }
 
     .hamburger:hover {
-    color: #6d7d7f; /* Change icon color to a darker gray on hover */
-}
-    .hamburger i, .hamburger span {
-        color: inherit; /* Inherit color from the parent (hamburger button) */
+        color: #6d7d7f !important; /* Change icon color to a darker gray on hover */
     }
-    /* If you are using a FontAwesome icon, target it explicitly */
-.hamburger i {
-    color: #f2f4f1; /* Set color for FontAwesome icon */
+
+    .hamburger i {
+        color: #f2f4f1 !important; /* Ensure FontAwesome icon color is also set */
+    }
 }
 
     
@@ -468,15 +463,14 @@ img {
 }
 
 /* Small mobile screens (portrait or very small devices) */
-@media screen and (max-width: 480px)
-     .hamburger:focus {
-        outline: none; /* Remove focus outline if visible */
+@media screen and (max-width: 480px) {
+     .hamburger {
+        color: #f2f4f1 !important; /* Ensure the hamburger icon color is #f2f4f1 */
     }
-    
-    .hamburger {
-    color: #f2f4f1 !important; /* Ensure the hamburger icon color is #f2f4f1 in mobile */
-        background-color: transparent !important; /* Ensure no background is applied */
-        border: none !important; /* Remove any border */
+
+    .hamburger:hover {
+        color: #6d7d7f !important; /* Change icon color to a darker gray on hover */
+    }
 }
   .prev, .next {
     padding: 10px;
