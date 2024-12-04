@@ -204,7 +204,7 @@ header h1 {
       align-items: left; /* Vertically center the items */
       justify-content: left; /* Horizontally center the items */
       top: 10px; /* Distance from the top */
-    left: 10px; /* Distance from the right */
+    right: 10px; /* Distance from the right */
     }
 
 header nav {
@@ -281,19 +281,21 @@ h5:hover {
 }
 
 /* Position the hamburger icon on the right */
+/* Flat hamburger icon styles */
 .hamburger {
     display: block;
     font-size: 30px;
     cursor: pointer;
-    color: #f2f4f1; /* Icon color set to light gray to match the design */
+    color: #f2f4f1; /* Icon color */
     padding: 10px;
     background-color: transparent; /* Transparent background */
-    border: none; /* Remove default button border */
-    border-radius: 5px;
+    border: none; /* Remove default border */
+    border-radius: 0; /* Remove border-radius to eliminate 3D effect */
     position: absolute;
     top: 10px; /* Distance from the top */
     right: 10px; /* Distance from the right */
     z-index: 1000; /* Ensure the hamburger icon is above other elements */
+    box-shadow: none; /* Remove any box-shadow for a flat look */
 }
 
 /* Add hover effect */
