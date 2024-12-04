@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>folio24</title>
+    <title>Ralph Acebron | folio24</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,8 +12,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <!-- Header Section -->
     <header>
+      <a id="top"></a>
         <div class="container">
             <h1>Ralph Acebron</h1>
+            <h5>Illustration & Design</h5>
             <nav>
                 <ul>
                     <li><a href="#works">Works</a></li>
@@ -32,27 +34,27 @@
         <h3>I. Traditional Art</h3>
 <div class="slideshow-container">
   <div class="mySlides1">
-    <img src="future2.png" style="width:100%">
+    <img src="future2-min.png" style="width:100%">
   </div>
 
   <div class="mySlides1">
-    <img src="found2.png" style="width:100%">
+    <img src="found2-min.png" style="width:100%">
   </div>
 
   <div class="mySlides1">
-    <img src="chloe2.png" style="width:100%">
+    <img src="chloe2-min.png" style="width:100%">
   </div>
 
   <div class="mySlides1">
-    <img src="breeze2.png" style="width:100%">
+    <img src="breeze2-min.png" style="width:100%">
   </div>
 
   <div class="mySlides1">
-    <img src="humans2.png" style="width:100%">
+    <img src="humans2-min.png" style="width:100%">
   </div>
 
   <div class="mySlides1">
-    <img src="iltd2.png" style="width:100%">
+    <img src="iltd2-min.png" style="width:100%">
   </div>
 
   <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -62,19 +64,19 @@
 <h3>II. Digital Art</h3>
 <div class="slideshow-container">
   <div class="mySlides2">
-    <img src="sw2.png" style="width:100%">
+    <img src="sw2-min.png" style="width:100%">
   </div>
 
   <div class="mySlides2">
-    <img src="fl2.png" style="width:100%">
+    <img src="fl2-min.png" style="width:100%">
   </div>
 
   <div class="mySlides2">
-    <img src="sea2.png" style="width:100%">
+    <img src="sea2-min.png" style="width:100%">
   </div>
 
   <div class="mySlides2">
-    <img src="f8d3.png" style="width:100%">
+    <img src="f8d3-min.png" style="width:100%">
   </div>
 
   <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
@@ -85,15 +87,15 @@
 <h3>III. Graphic Design</h3>
 <div class="slideshow-container">
   <div class="mySlides3">
-    <img src="pahr2.png" style="width:100%">
+    <img src="pahr2-min.png" style="width:100%">
   </div>
 
   <div class="mySlides3">
-    <img src="sono2.png" style="width:100%">
+    <img src="sono2-min.png" style="width:100%">
   </div>
 
   <div class="mySlides3">
-    <img src="sp12.png" style="width:100%">
+    <img src="sp12-min.png" style="width:100%">
   </div>
 
   <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
@@ -107,7 +109,7 @@
         <div class="container">
             <h2>About</h2>
             <div class="about-content">
-                <img src="ID4.png" alt="About Me" class="zoomable" width="200px" height="auto">
+                <img src="ID4-min.png" alt="About Me" class="zoomable" width="200px" height="auto">
             </div>
         </div>
     </section>
@@ -124,8 +126,9 @@
             </div>
             </form>
             <div id="contact-info">
-                <p><a href="mailto:acebron.ralphvince.o@gmail.com">Email</a></p>
-                <p><a href="https://m.me/ralphvince.acebron">Messenger</a></p>
+              <h4><i class="fas fa-phone"></i> 09-923-291-4858</h4>
+                <p><a href="mailto:acebron.ralphvince.o@gmail.com"target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i>Email</a></p>
+                <p><a href="https://m.me/ralphvince.acebron"target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-messenger"></i>Messenger</a></p>
             </div>
             </div>
         </div>
@@ -181,7 +184,20 @@ header {
 header h1 {
     margin-left: 20px;
     display: inline-block;
-}
+    display: flex;
+      flex-direction: row; /* Side by side layout */
+      align-items: left; /* Vertically center the items */
+      justify-content: left; /* Horizontally center the items */
+    }
+
+    header h5 {
+    margin-left: 20px;
+    display: inline-block;
+    display: flex;
+      flex-direction: row; /* Side by side layout */
+      align-items: left; /* Vertically center the items */
+      justify-content: left; /* Horizontally center the items */
+    }
 
 header nav {
     float: right;
@@ -230,6 +246,22 @@ h3 {
 
 h3:hover {
     color: #6d7d7f;
+}
+
+h4 {
+    color: #899ea0;
+}
+
+h4:hover{
+    color: #6d7d7f;
+}
+
+h5 {
+    color:#f2f4f1;
+}
+
+h5:hover {
+    color: white;
 }
 
 /* Section Styles */
@@ -512,6 +544,7 @@ footer:hover {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-align: center;
 }
 
 #contact-info a i {
@@ -737,11 +770,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetElement = document.querySelector(this.getAttribute('href'));
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            } else {
+                console.error('Target element not found: ' + this.getAttribute('href'));
+            }
         });
     });
 });
